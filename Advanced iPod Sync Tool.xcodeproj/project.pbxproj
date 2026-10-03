@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33F708B03071B35A001A114C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708AF3071B35A001A114C /* main.m */; };
+		33F708B33071B35A001A114C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708B23071B35A001A114C /* AppDelegate.m */; };
+		33F708B53071B35A001A114C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F708B43071B35A001A114C /* Images.xcassets */; };
+		33F708B83071B35A001A114C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F708B63071B35A001A114C /* MainMenu.xib */; };
+		33F708C43071B35B001A114C /* Advanced_iPod_Sync_ToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708C33071B35B001A114C /* Advanced_iPod_Sync_ToolTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33F708BE3071B35B001A114C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33F708A23071B35A001A114C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33F708A93071B35A001A114C;
+			remoteInfo = "Advanced iPod Sync Tool";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33F708AA3071B35A001A114C /* Advanced iPod Sync Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advanced iPod Sync Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F708AE3071B35A001A114C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F708AF3071B35A001A114C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33F708B13071B35A001A114C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33F708B23071B35A001A114C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33F708B43071B35A001A114C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		33F708B73071B35A001A114C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		33F708BD3071B35B001A114C /* Advanced iPod Sync ToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Advanced iPod Sync ToolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F708C23071B35B001A114C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F708C33071B35B001A114C /* Advanced_iPod_Sync_ToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Advanced_iPod_Sync_ToolTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33F708A73071B35A001A114C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F708BA3071B35B001A114C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33F708A13071B35A001A114C = {
+			isa = PBXGroup;
+			children = (
+				33F708AC3071B35A001A114C /* Advanced iPod Sync Tool */,
+				33F708C03071B35B001A114C /* Advanced iPod Sync ToolTests */,
+				33F708AB3071B35A001A114C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33F708AB3071B35A001A114C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33F708AA3071B35A001A114C /* Advanced iPod Sync Tool.app */,
+				33F708BD3071B35B001A114C /* Advanced iPod Sync ToolTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33F708AC3071B35A001A114C /* Advanced iPod Sync Tool */ = {
+			isa = PBXGroup;
+			children = (
+				33F708B13071B35A001A114C /* AppDelegate.h */,
+				33F708B23071B35A001A114C /* AppDelegate.m */,
+				33F708B43071B35A001A114C /* Images.xcassets */,
+				33F708B63071B35A001A114C /* MainMenu.xib */,
+				33F708AD3071B35A001A114C /* Supporting Files */,
+			);
+			path = "Advanced iPod Sync Tool";
+			sourceTree = "<group>";
+		};
+		33F708AD3071B35A001A114C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33F708AE3071B35A001A114C /* Info.plist */,
+				33F708AF3071B35A001A114C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33F708C03071B35B001A114C /* Advanced iPod Sync ToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				33F708C33071B35B001A114C /* Advanced_iPod_Sync_ToolTests.m */,
+				33F708C13071B35B001A114C /* Supporting Files */,
+			);
+			path = "Advanced iPod Sync ToolTests";
+			sourceTree = "<group>";
+		};
+		33F708C13071B35B001A114C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33F708C23071B35B001A114C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33F708A93071B35A001A114C /* Advanced iPod Sync Tool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F708C73071B35B001A114C /* Build configuration list for PBXNativeTarget "Advanced iPod Sync Tool" */;
+			buildPhases = (
+				33F708A63071B35A001A114C /* Sources */,
+				33F708A73071B35A001A114C /* Frameworks */,
+				33F708A83071B35A001A114C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Advanced iPod Sync Tool";
+			productName = "Advanced iPod Sync Tool";
+			productReference = 33F708AA3071B35A001A114C /* Advanced iPod Sync Tool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33F708BC3071B35B001A114C /* Advanced iPod Sync ToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F708CA3071B35B001A114C /* Build configuration list for PBXNativeTarget "Advanced iPod Sync ToolTests" */;
+			buildPhases = (
+				33F708B93071B35B001A114C /* Sources */,
+				33F708BA3071B35B001A114C /* Frameworks */,
+				33F708BB3071B35B001A114C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33F708BF3071B35B001A114C /* PBXTargetDependency */,
+			);
+			name = "Advanced iPod Sync ToolTests";
+			productName = "Advanced iPod Sync ToolTests";
+			productReference = 33F708BD3071B35B001A114C /* Advanced iPod Sync ToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33F708A23071B35A001A114C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Adithiya Venkatakrishnan";
+				TargetAttributes = {
+					33F708A93071B35A001A114C = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					33F708BC3071B35B001A114C = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 33F708A93071B35A001A114C;
+					};
+				};
+			};
+			buildConfigurationList = 33F708A53071B35A001A114C /* Build configuration list for PBXProject "Advanced iPod Sync Tool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33F708A13071B35A001A114C;
+			productRefGroup = 33F708AB3071B35A001A114C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33F708A93071B35A001A114C /* Advanced iPod Sync Tool */,
+				33F708BC3071B35B001A114C /* Advanced iPod Sync ToolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33F708A83071B35A001A114C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F708B53071B35A001A114C /* Images.xcassets in Resources */,
+				33F708B83071B35A001A114C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F708BB3071B35B001A114C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33F708A63071B35A001A114C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F708B33071B35A001A114C /* AppDelegate.m in Sources */,
+				33F708B03071B35A001A114C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F708B93071B35B001A114C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F708C43071B35B001A114C /* Advanced_iPod_Sync_ToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33F708BF3071B35B001A114C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33F708A93071B35A001A114C /* Advanced iPod Sync Tool */;
+			targetProxy = 33F708BE3071B35B001A114C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33F708B63071B35A001A114C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33F708B73071B35A001A114C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33F708C53071B35B001A114C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		33F708C63071B35B001A114C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		33F708C83071B35B001A114C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Advanced iPod Sync Tool/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33F708C93071B35B001A114C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Advanced iPod Sync Tool/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33F708CB3071B35B001A114C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Advanced iPod Sync ToolTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Advanced iPod Sync Tool.app/Contents/MacOS/Advanced iPod Sync Tool";
+			};
+			name = Debug;
+		};
+		33F708CC3071B35B001A114C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Advanced iPod Sync ToolTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Advanced iPod Sync Tool.app/Contents/MacOS/Advanced iPod Sync Tool";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33F708A53071B35A001A114C /* Build configuration list for PBXProject "Advanced iPod Sync Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F708C53071B35B001A114C /* Debug */,
+				33F708C63071B35B001A114C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33F708C73071B35B001A114C /* Build configuration list for PBXNativeTarget "Advanced iPod Sync Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F708C83071B35B001A114C /* Debug */,
+				33F708C93071B35B001A114C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		33F708CA3071B35B001A114C /* Build configuration list for PBXNativeTarget "Advanced iPod Sync ToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F708CB3071B35B001A114C /* Debug */,
+				33F708CC3071B35B001A114C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33F708A23071B35A001A114C /* Project object */;
+}
