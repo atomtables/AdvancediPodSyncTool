@@ -12,6 +12,8 @@
 		33F708B53071B35A001A114C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F708B43071B35A001A114C /* Images.xcassets */; };
 		33F708B83071B35A001A114C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F708B63071B35A001A114C /* MainMenu.xib */; };
 		33F708C43071B35B001A114C /* Advanced_iPod_Sync_ToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708C33071B35B001A114C /* Advanced_iPod_Sync_ToolTests.m */; };
+		33F708CF3071B868001A114C /* STStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708CE3071B867001A114C /* STStatusBarController.m */; };
+		33F708D23071BEE2001A114C /* STiPodWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708D13071BEE2001A114C /* STiPodWatcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,10 @@
 		33F708BD3071B35B001A114C /* Advanced iPod Sync ToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Advanced iPod Sync ToolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F708C23071B35B001A114C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33F708C33071B35B001A114C /* Advanced_iPod_Sync_ToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Advanced_iPod_Sync_ToolTests.m; sourceTree = "<group>"; };
+		33F708CD3071B867001A114C /* STStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STStatusBarController.h; sourceTree = "<group>"; };
+		33F708CE3071B867001A114C /* STStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STStatusBarController.m; sourceTree = "<group>"; };
+		33F708D03071BEE2001A114C /* STiPodWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STiPodWatcher.h; sourceTree = "<group>"; };
+		33F708D13071BEE2001A114C /* STiPodWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STiPodWatcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 				33F708B43071B35A001A114C /* Images.xcassets */,
 				33F708B63071B35A001A114C /* MainMenu.xib */,
 				33F708AD3071B35A001A114C /* Supporting Files */,
+				33F708CD3071B867001A114C /* STStatusBarController.h */,
+				33F708CE3071B867001A114C /* STStatusBarController.m */,
+				33F708D03071BEE2001A114C /* STiPodWatcher.h */,
+				33F708D13071BEE2001A114C /* STiPodWatcher.m */,
 			);
 			path = "Advanced iPod Sync Tool";
 			sourceTree = "<group>";
@@ -212,6 +222,8 @@
 			files = (
 				33F708B33071B35A001A114C /* AppDelegate.m in Sources */,
 				33F708B03071B35A001A114C /* main.m in Sources */,
+				33F708CF3071B868001A114C /* STStatusBarController.m in Sources */,
+				33F708D23071BEE2001A114C /* STiPodWatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +340,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Advanced iPod Sync Tool/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -339,6 +352,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Advanced iPod Sync Tool/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
