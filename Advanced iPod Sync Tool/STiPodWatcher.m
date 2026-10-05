@@ -28,8 +28,15 @@
     NSNotificationCenter* notificationCenter = [[NSWorkspace sharedWorkspace] notificationCenter];
     self.connectedObserver = [notificationCenter addObserverForName:NSWorkspaceDidMountNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification* note) {
         
+        NSError* error;
+        
         NSMutableDictionary* vendorModel = [self getVendorAndModelForIOService:[self getIOServiceForMountedURL:note.userInfo[NSWorkspaceVolumeURLKey]]];
+        if (vendorModel[@"serialNumber"] == nil) return;
+        
         vendorModel[@"mountPoint"] = note.userInfo[NSWorkspaceVolumeURLKey];
+        NSString *ipodName = nil;
+        [note.userInfo[NSWorkspaceVolumeURLKey] getResourceValue:&ipodName forKey:NSURLVolumeNameKey error:&error];
+        vendorModel[@"name"] = ipodName;
         
         self.connectedDevices[vendorModel[@"serialNumber"]] = vendorModel;
         NSLog(@"connectedDevices update: %@", self.connectedDevices);
@@ -38,7 +45,7 @@
     self.disconnectedObserver = [notificationCenter addObserverForName:NSWorkspaceDidUnmountNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification* note){
         NSString* serialNumberOfRemovedDevice;
         for (NSString* sn in self.connectedDevices) {
-            if ([self.connectedDevices[sn][@"mountPoint"] isEqualToString:note.userInfo[NSWorkspaceVolumeURLKey]]){
+            if ([self.connectedDevices[sn][@"mountPoint"] isEqualTo:note.userInfo[NSWorkspaceVolumeURLKey]]){
                 serialNumberOfRemovedDevice = sn;
                 break;
             }
@@ -51,6 +58,10 @@
     for (NSURL* url in urls) {
         NSMutableDictionary* vendorModel = [self getVendorAndModelForIOService:[self getIOServiceForMountedURL:url]];
         vendorModel[@"mountPoint"] = url;
+        NSString *ipodName = nil;
+        NSError* error;
+        [url getResourceValue:&ipodName forKey:NSURLVolumeNameKey error:&error];
+        vendorModel[@"name"] = ipodName;
         NSLog(@"url: %@, dict: %@", url, vendorModel);
         
         if (vendorModel[@"serialNumber"] == nil) continue;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6245" systemVersion="13F1909" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6245" systemVersion="13F1909" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1060" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6245"/>
@@ -12,11 +12,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
-            <connections>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
-            </connections>
-        </customObject>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="wF9-lv-JA3" customClass="STStatusBarController">
             <connections>
@@ -672,21 +668,14 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="383" y="186" width="667" height="448"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1366" height="746"/>
-            <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="667" height="448"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </view>
-            <point key="canvasLocation" x="489.5" y="355"/>
-        </window>
         <menu id="PIC-G1-jdN">
             <items>
                 <menuItem isSeparatorItem="YES" id="cx1-IU-NxP"/>
                 <menuItem title="Calendars" id="a5r-ar-nDf">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openCalendarWindow:" target="wF9-lv-JA3" id="1je-0r-wlZ"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="Contacts" id="tOz-Hc-4LV">
                     <modifierMask key="keyEquivalentModifierMask"/>
@@ -705,7 +694,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="329" y="238.5"/>
+            <point key="canvasLocation" x="289.5" y="255.5"/>
         </menu>
     </objects>
 </document>

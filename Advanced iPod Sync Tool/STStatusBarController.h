@@ -11,6 +11,8 @@
 
 @interface STStatusBarController : NSObject <NSMenuDelegate>
 
+@property (unsafe_unretained) IBOutlet NSWindow *window;
+
 @property (strong, nonatomic) NSStatusItem* statusItem;
 @property (unsafe_unretained) IBOutlet NSMenu* menu;
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3374B21E3073665E0057BE27 /* STiPodDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374B21D3073665E0057BE27 /* STiPodDataStore.m */; };
+		3374B221307367120057BE27 /* STiPodSyncExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374B220307367120057BE27 /* STiPodSyncExecutor.m */; };
+		33CD57FE3072CB3400F0D2FB /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CD57FD3072CB3400F0D2FB /* EventKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		33F33BF030732C0100E45C5C /* STConfigWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F33BEE30732C0000E45C5C /* STConfigWindowController.m */; };
+		33F33BF130732C0100E45C5C /* STConfigWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F33BEF30732C0000E45C5C /* STConfigWindowController.xib */; };
 		33F708B03071B35A001A114C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708AF3071B35A001A114C /* main.m */; };
 		33F708B33071B35A001A114C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708B23071B35A001A114C /* AppDelegate.m */; };
 		33F708B53071B35A001A114C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F708B43071B35A001A114C /* Images.xcassets */; };
@@ -14,6 +19,7 @@
 		33F708C43071B35B001A114C /* Advanced_iPod_Sync_ToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708C33071B35B001A114C /* Advanced_iPod_Sync_ToolTests.m */; };
 		33F708CF3071B868001A114C /* STStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708CE3071B867001A114C /* STStatusBarController.m */; };
 		33F708D23071BEE2001A114C /* STiPodWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708D13071BEE2001A114C /* STiPodWatcher.m */; };
+		33F708D530720B38001A114C /* STCalendarEventsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F708D430720B38001A114C /* STCalendarEventsProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3374B21C3073665E0057BE27 /* STiPodDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STiPodDataStore.h; sourceTree = "<group>"; };
+		3374B21D3073665E0057BE27 /* STiPodDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STiPodDataStore.m; sourceTree = "<group>"; };
+		3374B21F307367120057BE27 /* STiPodSyncExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STiPodSyncExecutor.h; sourceTree = "<group>"; };
+		3374B220307367120057BE27 /* STiPodSyncExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STiPodSyncExecutor.m; sourceTree = "<group>"; };
+		33CD57FD3072CB3400F0D2FB /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		33F33BED30732C0000E45C5C /* STConfigWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConfigWindowController.h; sourceTree = "<group>"; };
+		33F33BEE30732C0000E45C5C /* STConfigWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STConfigWindowController.m; sourceTree = "<group>"; };
+		33F33BEF30732C0000E45C5C /* STConfigWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STConfigWindowController.xib; sourceTree = "<group>"; };
 		33F708AA3071B35A001A114C /* Advanced iPod Sync Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advanced iPod Sync Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F708AE3071B35A001A114C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33F708AF3071B35A001A114C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,6 +55,8 @@
 		33F708CE3071B867001A114C /* STStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STStatusBarController.m; sourceTree = "<group>"; };
 		33F708D03071BEE2001A114C /* STiPodWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STiPodWatcher.h; sourceTree = "<group>"; };
 		33F708D13071BEE2001A114C /* STiPodWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STiPodWatcher.m; sourceTree = "<group>"; };
+		33F708D330720B38001A114C /* STCalendarEventsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCalendarEventsProvider.h; sourceTree = "<group>"; };
+		33F708D430720B38001A114C /* STCalendarEventsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCalendarEventsProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33CD57FE3072CB3400F0D2FB /* EventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +78,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3374B21B307366450057BE27 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				33F708D03071BEE2001A114C /* STiPodWatcher.h */,
+				33F708D13071BEE2001A114C /* STiPodWatcher.m */,
+				3374B21C3073665E0057BE27 /* STiPodDataStore.h */,
+				3374B21D3073665E0057BE27 /* STiPodDataStore.m */,
+				3374B21F307367120057BE27 /* STiPodSyncExecutor.h */,
+				3374B220307367120057BE27 /* STiPodSyncExecutor.m */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		33CD58023072DC1700F0D2FB /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				33F708D330720B38001A114C /* STCalendarEventsProvider.h */,
+				33F708D430720B38001A114C /* STCalendarEventsProvider.m */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		33F33BE730731AD000E45C5C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				33F708CD3071B867001A114C /* STStatusBarController.h */,
+				33F708CE3071B867001A114C /* STStatusBarController.m */,
+				33F33BED30732C0000E45C5C /* STConfigWindowController.h */,
+				33F33BEE30732C0000E45C5C /* STConfigWindowController.m */,
+				33F33BEF30732C0000E45C5C /* STConfigWindowController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		33F708A13071B35A001A114C = {
 			isa = PBXGroup;
 			children = (
+				33CD57FD3072CB3400F0D2FB /* EventKit.framework */,
 				33F708AC3071B35A001A114C /* Advanced iPod Sync Tool */,
 				33F708C03071B35B001A114C /* Advanced iPod Sync ToolTests */,
 				33F708AB3071B35A001A114C /* Products */,
@@ -82,15 +134,14 @@
 		33F708AC3071B35A001A114C /* Advanced iPod Sync Tool */ = {
 			isa = PBXGroup;
 			children = (
+				3374B21B307366450057BE27 /* Supporting */,
+				33F33BE730731AD000E45C5C /* UI */,
+				33CD58023072DC1700F0D2FB /* Calendar */,
 				33F708B13071B35A001A114C /* AppDelegate.h */,
 				33F708B23071B35A001A114C /* AppDelegate.m */,
 				33F708B43071B35A001A114C /* Images.xcassets */,
 				33F708B63071B35A001A114C /* MainMenu.xib */,
 				33F708AD3071B35A001A114C /* Supporting Files */,
-				33F708CD3071B867001A114C /* STStatusBarController.h */,
-				33F708CE3071B867001A114C /* STStatusBarController.m */,
-				33F708D03071BEE2001A114C /* STiPodWatcher.h */,
-				33F708D13071BEE2001A114C /* STiPodWatcher.m */,
 			);
 			path = "Advanced iPod Sync Tool";
 			sourceTree = "<group>";
@@ -201,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F33BF130732C0100E45C5C /* STConfigWindowController.xib in Resources */,
 				33F708B53071B35A001A114C /* Images.xcassets in Resources */,
 				33F708B83071B35A001A114C /* MainMenu.xib in Resources */,
 			);
@@ -220,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F33BF030732C0100E45C5C /* STConfigWindowController.m in Sources */,
 				33F708B33071B35A001A114C /* AppDelegate.m in Sources */,
+				33F708D530720B38001A114C /* STCalendarEventsProvider.m in Sources */,
 				33F708B03071B35A001A114C /* main.m in Sources */,
+				3374B21E3073665E0057BE27 /* STiPodDataStore.m in Sources */,
 				33F708CF3071B868001A114C /* STStatusBarController.m in Sources */,
+				3374B221307367120057BE27 /* STiPodSyncExecutor.m in Sources */,
 				33F708D23071BEE2001A114C /* STiPodWatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +468,7 @@
 				33F708C93071B35B001A114C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33F708CA3071B35B001A114C /* Build configuration list for PBXNativeTarget "Advanced iPod Sync ToolTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +477,7 @@
 				33F708CC3071B35B001A114C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,10 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "STCalendarEventsProvider.h"
 
 @interface AppDelegate ()
 
-@property (unsafe_unretained) IBOutlet NSWindow *window;
+
 
 @end
 
@@ -19,6 +20,17 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.watcher = [[STiPodWatcher alloc] init];
     // Insert code here to initialize your application
+    
+    self.calendarProvider = [[STCalendarCurrentEventsProvider alloc] init];
+    NSLog(@"calendarAccessProvided:%d", [self.calendarProvider calendarAccessProvided]);
+    if ([self.calendarProvider calendarAccessProvided]) {
+        NSLog(@"eventCount as shown: %ld", [self.calendarProvider totalEventCount]);
+        NSLog(@"events: %@", [self.calendarProvider allEvents]);
+    };
+    if ([self.calendarProvider reminderAccessProvided]) {
+        NSLog(@"reminderCount as shown: %ld", [self.calendarProvider totalReminderCount]);
+        NSLog(@"reminders: %@", [self.calendarProvider allReminders]);
+    }
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

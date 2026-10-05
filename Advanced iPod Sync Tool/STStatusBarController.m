@@ -6,13 +6,17 @@
 //  Copyright (c) 2026 Adithiya Venkatakrishnan. All rights reserved.
 //
 
+#import "STConfigWindowController.h"
 #import "STStatusBarController.h"
 #import "AppDelegate.h"
 
-@implementation STStatusBarController
+@implementation STStatusBarController {
+    NSWindowController* currentlyOpenViewController;
+}
 
 - (void)awakeFromNib {
     [self instantiateMenuBar];
+    currentlyOpenViewController = [[STConfigWindowController alloc] initWithWindowNibName:@"STConfigWindowController"];
 }
 
 - (void)instantiateMenuBar {
@@ -24,7 +28,18 @@
     [self.statusItem setHighlightMode:YES];
     [self.statusItem setMenu:self.menu];
     
+    
+    
     [self.menu setDelegate:self];
+}
+
+- (IBAction)openCalendarWindow:(id)sender {
+//    currentlyOpenViewController = [[STCalendarConfigController alloc] initWithNibName:@"STCalendarConfigController" bundle:nil];
+//    [[currentlyOpenViewController view] setFrame:[[self.window contentView] bounds]];
+//    [self.window setContentView:currentlyOpenViewController.view];
+//    [self.window makeKeyAndOrderFront:nil];
+    [[currentlyOpenViewController window] makeKeyAndOrderFront:sender];
+    [NSApp activateIgnoringOtherApps:true];
 }
 
 - (void)menuNeedsUpdate:(NSMenu*)menu {

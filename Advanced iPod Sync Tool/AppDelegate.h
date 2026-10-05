@@ -8,10 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 #import "STiPodWatcher.h"
+#import "STCalendarEventsProvider.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (strong, nonatomic) STiPodWatcher* watcher;
+@property (strong, nonatomic) STCalendarCurrentEventsProvider* calendarProvider;
 
 @end
 
